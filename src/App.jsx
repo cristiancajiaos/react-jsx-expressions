@@ -11,6 +11,12 @@ function App() {
     return kw * 1.36;
   }
 
+  const myObj = {
+    name: 'Fiat',
+    model: '500',
+    color: 'white'
+  };
+
   return (
     <section className="container my-2">
       <h1>My car</h1>
@@ -21,6 +27,11 @@ function App() {
 
       <h1>My other car</h1>
       <p>My other car has {kwtohp(218)} horsepower</p>
+
+      <hr/>
+
+      <h1>A third car</h1>
+      <p>My car is a {myObj.color} {myObj.name} {myObj.model}</p>
 
 
     </section>
